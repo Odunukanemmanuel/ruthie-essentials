@@ -21,19 +21,10 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
   <link href="assets/css/style.css" rel="stylesheet">
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "vauYx54JpZHQ9vNRW",
-      });
-   })();
-</script>
 </head>
 
 <body>
@@ -58,7 +49,7 @@
       <ul>
         <li>Better quality sleep at a nominal price.</li>
         <li>The perfect reason to sleep.</li>
-        <li>pay less sleep more.</li>
+        <li>pay less sleep more.</li>a
       </ul>
     </div>
   </section>
@@ -107,8 +98,9 @@
                 title="portfolio 1 picture" class="img-fluid">
               <div class="portfolio-info">
                 <div class="caption">
-                  <p><a href="./bed spread/" title="More Details" target="_blank">
+                  <p><a href="./bed spread/" title="click for More Details" target="_blank">
                       <h4>DUVET COVER ONLY (FABRIC WITH A ZIP)</h4>
+                      <p>(click for more details and price-list)</p>
                     </a></p>
                 </div>
               </div>
@@ -120,8 +112,9 @@
                 title="portfolio 4 picture" class="img-fluid">
               <div class="portfolio-info">
                 <div class="caption">
-                  <p><a href="./BED SPREAD 2/" title="More Details" target="_blank"><i class="fa fa-link"></i>
+                  <p><a href="./BED SPREAD 2/" title="click for More Details" target="_blank"><i class="fa fa-link"></i>
                       <h4>Bedsheet, pillowcases, duvet and duvet cover</h4>
+                      <p>(click for more details and price-list)</p>
                     </a></p>
                 </div>
               </div>
@@ -133,8 +126,9 @@
                 title="portfolio 5 picture" class="img-fluid">
               <div class="portfolio-info">
                 <div class="caption">
-                  <p><a href="./bed spread 3/" title="More Details" target="_blank">
+                  <p><a href="./bed spread 3/" title="click for More Details" target="_blank">
                       <h4>Bedsheet, pillowcases and duvet</h4>
+                      <p>(click for more details and price-list)</p>
                     </a></p>
                 </div>
               </div>
@@ -146,8 +140,9 @@
                 title="portfolio 6 picture" class="img-fluid">
               <div class="portfolio-info">
                 <div class="caption">
-                  <p><a href="./bed spread4/" title="More Details" target="_blank">
+                  <p><a href="./bed spread4/" title="click for More Details" target="_blank">
                       <h4>Bedsheet and pillow case only</h4>
+                      <p>(click for more details and price-list)</p>
                     </a></p>
                 </div>
               </div>
@@ -192,52 +187,59 @@
             </div>
 
           </div>
-
           <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="" class="myForm" onsubmit="validate()">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" id="firstname" name="firstname" placeholder="First Name" required
-                  class="shadow form-control form-control-lg">
-                  <p class="name-err"></p>
+            <form action="https://formspree.io/f/mgegqvra" method="POST" class="myForm" onsubmit="validate()">
+              <label>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required
+                      class="shadow form-control form-control-lg">
+                    <p class="name-err"></p>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="text" id="phonenumber" name="phone" placeholder="Enter Phone Number"
+                      class="shadow form-control form-control-lg">
+                    <p class="phone-err"></p>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" id="email" name="email" placeholder="email address" required
+                      class="shadow form-control form-control-lg">
+                    <p class="email-err"></p>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea name="message" id="message" placeholder="message" rows="5" required
+                      class="shadow form-control form-control-lg"></textarea>
+                    <P class="text-err"></P>
+                  </div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" id="email" name="email" placeholder="email address" required
-                  class="shadow form-control form-control-lg">
-                  <p class="email-err"></p>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea name="message" id="message" placeholder="message" rows="5" required
-                class="shadow form-control form-control-lg"></textarea>
-                <p class="text-err"></p>
-              </div>
-              
+              </label>
               <div class="text-center d-grid mt-1">
-                <input type="submit" value="submit" onclick="sendMail()" class="btn btn-primary rounded-pill pt-3 pb-3">
-              </div> 
-            </div>
+                <input type="submit" value="submit" onclick="callAlert('THANKS FOR YOUR PATRONAGE')"
+                  class="btn btn-primary rounded-pill pt-3 pb-3">
+              </div>
             </form>
-
           </div>
-
         </div>
-
       </div>
+      <script>
+        function callAlert(msg) {
+          alert(msg)
+        }
+      </script>
     </section>
 
   </main>
 
   <footer id="footer">
     <div class="container">
-      <h3> KNOW MORE ABOUT RUTHIE ESSENTIALS</h3>
-      <p> CLICK ON THE IG ICON OR WHATSAPP NUMBER BELOW</p>
+      <h3> KNOW MORE ABOUT US:</h3>
+      <p> FOR MORE INFORMATION, CLICK ON THE ICONS BELOW </p>
       <div class="social-links">
         <a href="https://www.instagram.com/ruthies_essentials?igsh=ZWh0c2h6cnBudmE2" class="instagram"><i
             class="bx bxl-instagram"></i></a>
+        <a href="https://wa.me/c/2348135443030" class="whatsapp"><i class='bx bxl-whatsapp bx-tada'></i></a>
       </div>
-      <p>Whatsapp number:</p><a href="https://wa.me/c/2348135443030">+2348135443030</a></p>
+    
     </div>
   </footer>
 
@@ -249,14 +251,14 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  
+
 
   <script src="assets/js/main.js"></script>
+  <script src="app.js"></script>
 
 </body>
 
 </html>
-
 
 
 
